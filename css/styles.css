@@ -1,0 +1,312 @@
+/* 
+font-family: 'Allerta', sans-serif;
+font-family: 'Montserrat', sans-serif; 
+*/
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: 'Allerta', sans-serif;
+  margin: 0; 
+}
+main {
+  flex:1;
+}
+
+.button {
+
+  border: none;
+  border-radius: 12px;
+  background: #9c540c;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  /* 8px en top y bottom, 12px right y left */
+  padding: 8px 12px;
+  text-decoration: none;
+  /* Arrancar de derecha y se va ir hacia la izquierda, colores degradado*/
+  background: linear-gradient(to left, #8a4b0c, #dd944c);
+ 
+}
+label {
+  margin-top: 10px;
+}
+
+input, textarea {
+  outline: 0;
+  border-radius: 7px;
+  border: 1px solid #835835;
+}
+
+input:focus, textarea:focus {
+  background: #fce3c3;
+}
+
+input[type='radio']:checked:after {
+  width: 10px;
+  height: 10px;
+  border-radius: 15px;
+  position: relative;
+  background-color: #836123;
+  content:''; 
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid white;
+}
+
+input[type='checkbox']:checked:after {
+  width: 10px;
+  height: 10px;
+  position: relative;
+  background-color: #977639;
+  content:'';
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid white;
+}
+
+
+/* Una buena practica tener estilos centralizados */
+.contenedor {
+  width: 800px;
+  margin: auto;
+  position: relative;
+}
+.bacground-general {
+  background: #412B19;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.4);
+  height: 85px;
+  color: white;
+}
+.titulo {
+  font-family: 'Montserrat', sans-serif; 
+  font-size: 70px;
+  margin-top: 70px;
+  margin-bottom: 0px;
+}
+
+.title-a {
+  margin-top: 0;
+  font-size: 24px;
+}
+
+.title-b {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.cafes {
+  color: #412B19;
+  margin-bottom: 60px;
+}
+
+/* SELECTOR DESCENDENTE */
+.cafes h2 {
+  font-family: 'Montserrat', sans-serif; 
+  font-size: 35px;
+}
+/* El background puede ser un color o imagen */
+
+.portada {
+  background-image: url('../img/background.jpg');
+  background-size: cover;
+  color: white;
+  padding: 20px;
+  height: 500px;
+}
+
+.portada button {
+  margin-bottom: 70px;
+}
+
+.menu {
+  display: inline-block;
+  font-size: 24px;
+  position: absolute;
+  right: 0;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+}
+
+.menu li {
+  display: inline-block;
+  margin-left: 30px;
+}
+
+.logotipo {
+  display: inline-block;
+  font-family: 'Pacifico', cursive;
+  font-size: 50px;
+  margin-left:0;
+  margin-top: -12px
+}
+
+.header {
+  position: relative;
+}
+
+.footer {
+  background: #C29B61;
+  padding: 50px 10px;
+}
+.cafe {
+  padding: 10px;
+  margin: 10px 10px 40px 10px;
+  /* border: 1px solid #412B19; */
+ /* overflow: hidden;  para que no desborden nuestras imagenes*/
+  border-radius: 8px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+}
+
+.cafe ol {
+  padding:0;
+}
+
+.cafe.granoscafe {
+  height: 190px;
+}
+.right {
+  float: right;
+  position: relative;
+  top: -127px;
+}
+
+.left {
+  float: left;
+  position: relative;
+
+}
+
+
+.contenedor-cafe-a {
+  position: relative;
+  bottom: 36px;
+  padding-left: 20px;
+}
+
+.contenedor-cafe-b {
+  position: relative;
+  bottom: 85px;
+  margin-left: 370px;
+}
+
+.contacto {
+  display: flex;
+  width: 300px;
+  flex-wrap: wrap;
+}
+.contacto img {
+  display: block;
+}
+
+.contacto strong {
+  display:block;
+}
+
+.contacto a {
+  color: white;
+  text-decoration: none;
+  /*TOP, RIGHT BOTTOM, LEFT*/
+  margin: 10px 10px 10px 0;
+}
+
+.footer .contenedor {
+  display: flex;
+  justify-content: space-between;
+}
+
+.formulario {
+  display: flex;
+  color: white;
+  width: 430px;
+  /* padding-top: 50px;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-bottom: 50px; */
+
+  /* padding: 50px 10px;  */
+}
+
+/* vamos darle estilos a las clases col1 y col2 */
+
+.col1, .col2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.col1 {
+  margin-right: 15px;
+}
+
+.col2 {
+  align-items: flex-start;
+}
+
+.col2 .button{
+  margin-top:15px;
+}
+
+.intereses label {
+   font-size: 12px;
+}
+
+.formulario label, .generos, .intereses {
+  margin-bottom: 10px;
+}
+
+.generos {
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+/* Tablas */
+
+table {
+  width: 100%; /*toma todo el ancho de tu padre contenedor*/
+  margin-bottom: 60px;
+}
+th {
+  background-color: #836123;
+  color: white;
+  padding: 10px 20px;
+}
+
+td {
+  padding: 20px;
+}
+
+table, td, th {
+  font-size: 20px;
+  border: 0;
+  /* border: 1px solid #412B19;
+  border-collapse: collapse; */
+}
+i {
+  font-size: 12px;
+}
+.precio {
+  border-radius: 50%;
+  font-size: 12px;
+  padding: 15px 7px;
+  background: #9c540c;
+  color: white;
+  text-align: center;
+  width: 35px;
+}
+.titulo-precio{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #3a2b29;
+  font-size: 45px;
+  font-family: 'Pacifico', cursive;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+.tabla {
+  margin: 50px 0px;
+}
+/* /tablas */
