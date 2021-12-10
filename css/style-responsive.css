@@ -1,0 +1,53 @@
+/* 768 para talblet y esta dentro de los 800px */
+@media screen and (max-width: 800px){
+    /*Portada*/
+    .titulo{
+        font-size: 45px;
+    }
+    .title-a {
+        font-size: 18px;
+    }
+    .portada{
+        height: auto;
+    }
+    .portada .button {
+        margin-bottom: 30px;
+        display: inline-block;
+    }
+    /* --FinPortada */
+
+    /*--Cafes--*/
+
+    .cafes {
+        text-align: center;
+        margin: 0px;
+    }
+    .right, .left {
+        float: none;
+        position: static;
+    }
+
+    .contenedor-cafe-a {
+        position: static;
+        padding: 0px;
+    }
+
+    .cafe.granoscafe {
+        height: auto;
+    }
+
+    .contenedor-cafe-b {
+        margin-left: 0px;
+        position: static;
+    }
+
+    .cafe li {
+        list-style: none;
+    }
+
+    .title-b {
+        margin: 0px;
+    }
+
+    /*--FinCafes*/
+}
