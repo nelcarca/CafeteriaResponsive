@@ -117,3 +117,58 @@
 
     /*FinFooter*/
 }
+
+/*para 650px header*/
+
+@media screen and (max-width: 650px){
+    .header {
+        text-align: center;
+
+    }
+    .logotipo{
+        margin: 0px;
+    }
+    .menu {
+        position: static;
+        display: block;
+    }
+    .menu li:first-child {
+        margin: 0px;
+    }
+    .menu ul {
+        padding: 0px;
+    }
+}
+
+/*--Celular--*/
+
+@media screen and (max-width: 500px){
+    .menu li {
+        display: block;
+        margin: 0px;
+        border-bottom: 1px solid white;
+        padding: 8px 0;
+    }
+    .menu li:first-child {
+        border-top: 1px solid white;
+    }
+
+    .portada {
+        text-align: center;
+    }
+
+    .titulo {
+        font-size: 35px;
+    }
+    .title-a {
+        font-size: 15px;
+    }
+
+    .cafe img {
+        width: 200px;
+    }
+    .title-b {
+        font-size: 30px;
+    }
+}
+/*--FinCelular*/
