@@ -13,7 +13,7 @@
     display: none;
   }
 
-/* 768 para talblet y esta dentro de los 800px */
+/*768 para talblet y esta dentro de los 800px */
 @media screen and (max-width: 800px){
     /*Portada*/
     .titulo{
